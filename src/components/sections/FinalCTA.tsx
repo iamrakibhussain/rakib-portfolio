@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { Copy, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -32,7 +32,13 @@ const MagneticWrapper = ({ children, className }: { children: React.ReactNode, c
   const mouseX = useSpring(x, springConfig);
   const mouseY = useSpring(y, springConfig);
 
+    const [isTouch, setIsTouch] = useState(true);
+  useEffect(() => {
+    const check = () => setIsTouch(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    check(); window.addEventListener('resize', check); return () => window.removeEventListener('resize', check);
+  }, []);
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isTouch) return;
     const { clientX, clientY } = e;
     const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
     const centerX = left + width / 2;
@@ -70,7 +76,13 @@ export function FinalCTA() {
   const spotlightY = useSpring(mouseY, { stiffness: 40, damping: 20 });
   const sectionRef = useRef<HTMLElement>(null);
 
+    const [isTouch, setIsTouch] = useState(true);
+  useEffect(() => {
+    const check = () => setIsTouch(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    check(); window.addEventListener('resize', check); return () => window.removeEventListener('resize', check);
+  }, []);
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    if (isTouch) return;
     if (!sectionRef.current) return;
     const rect = sectionRef.current.getBoundingClientRect();
     // Center the spotlight exactly on the cursor relative to the section

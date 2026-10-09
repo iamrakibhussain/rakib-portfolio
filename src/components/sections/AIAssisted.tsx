@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { Zap, GitPullRequest, Sparkles, Code2, Terminal, MousePointer2 } from "lucide-react";
 
-const aiTools = ["GitHub Copilot", "ChatGPT-4", "Claude 3.5", "Cursor AI", "V0 by Vercel", "Midjourney", "GitHub Copilot", "ChatGPT-4", "Claude 3.5", "Cursor AI"];
+const aiTools = ["Gemini Pro Agent", "Antigravity", "Cursor AI", "GitHub Copilot", "ChatGPT-4", "Claude 3.5", "Gemini Pro Agent", "Antigravity", "Cursor AI", "GitHub Copilot", "ChatGPT-4", "Claude 3.5"];
 
 const badCode = `// legacy_fetch.js
 function getData(cb) {
@@ -44,7 +44,13 @@ export function AIAssisted() {
   const divRef = useRef<HTMLDivElement>(null);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
+    const [isTouch, setIsTouch] = useState(true);
+  useEffect(() => {
+    const check = () => setIsTouch(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    check(); window.addEventListener('resize', check); return () => window.removeEventListener('resize', check);
+  }, []);
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isTouch) return;
     if (!divRef.current) return;
     const rect = divRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -194,8 +200,8 @@ export function AIAssisted() {
             
             {[
               { icon: Zap, title: "10x Development Speed", desc: "Generating boilerplate, writing tests, and scaffolding architectures in seconds rather than hours." },
-              { icon: GitPullRequest, title: "Automated Refactoring", desc: "Upgrading legacy codebases and fixing vulnerabilities automatically using semantic AST parsing." },
-              { icon: Code2, title: "Zero-Day Bug Detection", desc: "Intelligent code reviews catch edge-cases and performance bottlenecks before they reach production." }
+              { icon: GitPullRequest, title: "Automated Refactoring", desc: "Upgrading codebases, improving maintainability, and implementing multi-file features efficiently." },
+              { icon: Code2, title: "Code Review & Debugging", desc: "Intelligent code reviews catch edge-cases, resolve complex bugs, and fix performance bottlenecks." }
             ].map((feature, idx) => (
               <motion.div 
                 key={idx}
@@ -234,3 +240,4 @@ export function AIAssisted() {
     </section>
   );
 }
+

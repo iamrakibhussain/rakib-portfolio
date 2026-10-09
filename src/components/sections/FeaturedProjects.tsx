@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/shared/icons";
 import { projects } from "@/data/projects";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // Interactive 3D Card for Projects
 function ProjectCard({ project }: { project: typeof projects[0] }) {
@@ -14,7 +14,13 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
+    const [isTouch, setIsTouch] = useState(true);
+  useEffect(() => {
+    const check = () => setIsTouch(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    check(); window.addEventListener('resize', check); return () => window.removeEventListener('resize', check);
+  }, []);
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isTouch) return;
     if (!divRef.current) return;
     const div = divRef.current;
     const rect = div.getBoundingClientRect();
@@ -56,7 +62,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
       />
 
       {/* Project Image */}
-      <div className="relative w-full h-64 overflow-hidden bg-black/5">
+      <div className="relative w-full aspect-[1672/941] overflow-hidden bg-black/5">
         <Image 
           src={project.coverImage || "/images/projects/placeholder.svg"} 
           alt={project.title}

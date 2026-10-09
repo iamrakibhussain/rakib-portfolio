@@ -3,7 +3,7 @@
 import { Code2, Database, Server, Blocks } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { useState, useRef, ReactNode } from "react";
+import { useState, useRef, ReactNode, useEffect } from "react";
 
 interface Skill {
   title: string;
@@ -20,8 +20,17 @@ function BentoCard({ skill, index }: { skill: Skill; index: number }) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
+  const [isTouchDevice, setIsTouchDevice] = useState(true);
+
+  useEffect(() => {
+    const checkTouch = () => setIsTouchDevice(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    checkTouch();
+    window.addEventListener('resize', checkTouch);
+    return () => window.removeEventListener('resize', checkTouch);
+  }, []);
+
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!divRef.current) return;
+    if (!divRef.current || isTouchDevice) return;
     const div = divRef.current;
     const rect = div.getBoundingClientRect();
     
@@ -100,36 +109,36 @@ function BentoCard({ skill, index }: { skill: Skill; index: number }) {
 }
 
 export function Expertise() {
-  const skills = [
+    const skills = [
     {
       title: "Frontend Engineering",
       description: "Building responsive, accessible, and performant user interfaces with modern React ecosystems.",
       icon: <Code2 className="w-6 h-6" />,
-      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Zod"],
       className: "md:col-span-2 md:row-span-1",
     },
     {
-      title: "Backend & Systems",
-      description: "Designing scalable APIs and microservices with secure data flows.",
+      title: "Backend & Security",
+      description: "Designing scalable APIs with secure authentication, RBAC, and clean data flows.",
       icon: <Server className="w-6 h-6" />,
-      tags: ["Node.js", "Express", "REST", "GraphQL"],
+      tags: ["Node.js", "Express.js", "REST API", "JWT Auth", "RBAC"],
       className: "md:col-span-1 md:row-span-2",
     },
     {
       title: "Database Architecture",
-      description: "Modeling complex data structures and optimizing queries for high-volume reads and writes.",
+      description: "Modeling complex data structures, ensuring relationships, validation, and performance.",
       icon: <Database className="w-6 h-6" />,
-      tags: ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
+      tags: ["PostgreSQL", "MongoDB", "SQL", "Prisma", "Mongoose"],
       className: "md:col-span-1 md:row-span-1",
     },
     {
-      title: "Modern Architecture",
-      description: "Leveraging the latest architectural patterns for fast global delivery.",
+      title: "Production & DevOps",
+      description: "Maintaining clean code architecture and seamless deployment workflows.",
       icon: <Blocks className="w-6 h-6" />,
-      tags: ["Serverless", "Edge Computing", "Micro-frontends"],
+      tags: ["Git/GitHub", "CI/CD", "Vercel", "Clean Code"],
       className: "md:col-span-1 md:row-span-1",
     }
-  ];
+  ];;
 
   return (
     <section className="w-full py-24 md:py-32 relative z-10 overflow-hidden">
@@ -160,3 +169,4 @@ export function Expertise() {
     </section>
   );
 }
+

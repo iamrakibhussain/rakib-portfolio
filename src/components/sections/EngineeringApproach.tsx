@@ -8,46 +8,46 @@ import { cn } from "@/lib/utils";
 const approaches = [
   {
     id: "01",
-    title: "System Architecture",
+    title: "Clean Architecture",
     icon: Network,
-    description: "I believe in measuring twice and cutting once. Before writing any code, I architect scalable systems that can handle future growth, focusing on proper database normalization, API design, and component reusability.",
+    description: "I design systems that can evolve as requirements grow, separating responsibilities and keeping implementations maintainable.",
     checklist: [
-      "Microservices & Monorepo Strategies",
-      "Scalable Database Schemas",
-      "API-First Design (REST & GraphQL)"
+      "Modular Architecture",
+      "Scalable Database Design",
+      "REST API Development"
     ]
   },
   {
     id: "02",
-    title: "Clean Code & Security",
+    title: "Security & Reliability",
     icon: ShieldCheck,
-    description: "Writing code that machines can understand is easy; writing code that humans can understand is professional. I enforce strict typing, comprehensive error handling, and robust security practices.",
+    description: "Security is built-in, not bolted on. I protect application data, authentication flows, and user access while handling edge cases.",
     checklist: [
-      "Strict TypeScript Adoption",
-      "OWASP Security Guidelines",
-      "Modular & Reusable Components"
+      "Authentication & RBAC",
+      "Input Validation",
+      "Robust Error Handling"
     ]
   },
   {
     id: "03",
     title: "Performance First",
     icon: Zap,
-    description: "Speed is a feature. I build lightning-fast web applications by optimizing rendering strategies, minimizing bundle sizes, and implementing aggressive caching at the edge.",
+    description: "I build lightning-fast web applications by avoiding unnecessary complexity, optimizing critical paths, and utilizing modern rendering strategies.",
     checklist: [
-      "Core Web Vitals Optimization",
-      "SSR / SSG & Edge Routing",
-      "Lazy Loading & Image Optimization"
+      "SSR / SSG / ISR",
+      "Next.js App Router",
+      "Optimized Data Fetching"
     ]
   },
   {
     id: "04",
-    title: "CI/CD & DevOps",
+    title: "Production & Maintenance",
     icon: GitMerge,
-    description: "Shipping should be a non-event. I set up automated pipelines that test, build, and deploy code securely, ensuring high confidence and zero-downtime releases.",
+    description: "I focus on real-world maintainability, setting up workflows that test, build, and deploy code securely with seamless collaboration.",
     checklist: [
-      "Automated Testing (Unit & E2E)",
-      "GitHub Actions Pipelines",
-      "Docker & Containerization"
+      "Git & PR Workflows",
+      "CI/CD Pipelines",
+      "Production Debugging"
     ]
   }
 ];
@@ -60,7 +60,13 @@ export function EngineeringApproach() {
   const divRef = useRef<HTMLDivElement>(null);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
+    const [isTouch, setIsTouch] = useState(true);
+  useEffect(() => {
+    const check = () => setIsTouch(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    check(); window.addEventListener('resize', check); return () => window.removeEventListener('resize', check);
+  }, []);
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isTouch) return;
     if (!divRef.current) return;
     const div = divRef.current;
     const rect = div.getBoundingClientRect();
@@ -250,3 +256,4 @@ export function EngineeringApproach() {
     </section>
   );
 }
+
