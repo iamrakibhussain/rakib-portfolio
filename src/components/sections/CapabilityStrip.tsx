@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Bot, Layers, ShieldCheck, Code2, Database, Workflow, Terminal, Server } from "lucide-react";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { cn } from "@/lib/utils";
@@ -27,7 +27,13 @@ function BentoCard({ children, className }: { children: React.ReactNode; classNa
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
+    const [isTouch, setIsTouch] = useState(true);
+  useEffect(() => {
+    const check = () => setIsTouch(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    check(); window.addEventListener('resize', check); return () => window.removeEventListener('resize', check);
+  }, []);
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isTouch) return;
     if (!divRef.current) return;
 
     const div = divRef.current;
@@ -100,8 +106,8 @@ export function CapabilityStrip() {
             {marqueeItems.map((item, idx) => (
               <div key={`m1-${idx}`} className="flex items-center space-x-2 mx-8 group cursor-default">
                 <item.icon className="h-6 w-6 transition-transform group-hover:scale-110" style={{ color: item.color }} />
-                <span className="text-base md:text-lg font-bold tracking-wider uppercase text-black/80 group-hover:text-black transition-colors">{item.name}</span>
-                <span className="mx-8 text-black/20">•</span>
+                <span className="whitespace-nowrap text-base md:text-lg font-bold tracking-wider uppercase text-black/80 group-hover:text-black transition-colors">{item.name}</span>
+                
               </div>
             ))}
           </div>
@@ -109,8 +115,8 @@ export function CapabilityStrip() {
             {marqueeItems.map((item, idx) => (
               <div key={`m2-${idx}`} className="flex items-center space-x-2 mx-8 group cursor-default">
                 <item.icon className="h-6 w-6 transition-transform group-hover:scale-110" style={{ color: item.color }} />
-                <span className="text-base md:text-lg font-bold tracking-wider uppercase text-black/80 group-hover:text-black transition-colors">{item.name}</span>
-                <span className="mx-8 text-black/20">•</span>
+                <span className="whitespace-nowrap text-base md:text-lg font-bold tracking-wider uppercase text-black/80 group-hover:text-black transition-colors">{item.name}</span>
+                
               </div>
             ))}
           </div>
@@ -194,3 +200,4 @@ export function CapabilityStrip() {
     </section>
   );
 }
+

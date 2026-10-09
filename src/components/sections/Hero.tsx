@@ -16,8 +16,17 @@ function TiltBox({ children, className }: { children: React.ReactNode; className
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.matchMedia("(hover: none)").matches || window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!divRef.current) return;
+    if (!divRef.current || isMobile) return;
 
     const div = divRef.current;
     const rect = div.getBoundingClientRect();
