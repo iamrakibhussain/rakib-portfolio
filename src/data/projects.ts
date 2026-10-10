@@ -35,7 +35,7 @@ export const projects: Project[] = [
     summary:
       "A complete modern e-commerce solution with seamless payment gateway integration and optimized cart experience.",
     content: "Detailed description of the E-Commerce Platform goes here...",
-    coverImage: "/images/projects/placeholder.svg",
+    coverImage: "/images/projects/focusly study productivity dashboard.png",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     liveUrl: "#",
     repoUrl: "#",

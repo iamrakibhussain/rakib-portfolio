@@ -62,7 +62,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
       />
 
       {/* Project Image */}
-      <div className="relative w-full aspect-[1672/941] overflow-hidden bg-black/5">
+      <div className="relative w-full aspect-[16/9] overflow-hidden bg-black/5">
         <Image 
           src={project.coverImage || "/images/projects/placeholder.svg"} 
           alt={project.title}
