@@ -4,11 +4,12 @@ import { Metadata } from "next";
 import { ProjectDetailsClient } from "@/components/sections/ProjectDetailsClient";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const project = projects.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return { title: "Project Not Found" };
   return {
     title: `${project.title} | Rakib Hussain`,
@@ -22,9 +23,10 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProjectCaseStudy({ params }: Props) {
-  const currentIndex = projects.findIndex((p) => p.slug === params.slug);
-  
+export default async function ProjectCaseStudy({ params }: Props) {
+  const { slug } = await params;
+  const currentIndex = projects.findIndex((p) => p.slug === slug);
+
   if (currentIndex === -1) {
     notFound();
   }

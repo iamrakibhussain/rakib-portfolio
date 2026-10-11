@@ -144,7 +144,7 @@ export function AboutClient() {
               <h2 className="text-2xl font-black text-black">Who I Am</h2>
             </div>
             <p className="text-lg md:text-xl font-medium text-black/80 leading-relaxed mb-6 relative z-10">
-              I&apos;m a Full-Stack Developer with 2+ years of hands-on experience building modern web applications and working across the JavaScript/TypeScript ecosystem. I work across the complete development lifecycle â€” from responsive user interfaces to database design, authentication, security, and ongoing maintenance.
+              I&apos;m a Full-Stack Developer with 2+ years of hands-on experience building modern web applications and working across the JavaScript/TypeScript ecosystem. I work across the complete development lifecycle — from responsive user interfaces to database design, authentication, security, and ongoing maintenance.
             </p>
             <p className="text-lg font-medium text-black/70 leading-relaxed relative z-10">
               I believe that writing code machines can understand is easy; writing code humans can understand is professional.

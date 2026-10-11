@@ -138,7 +138,7 @@ export function Expertise() {
       tags: ["Git/GitHub", "CI/CD", "Vercel", "Clean Code"],
       className: "md:col-span-1 md:row-span-1",
     }
-  ];;
+  ];
 
   return (
     <section className="w-full py-24 md:py-32 relative z-10 overflow-hidden">

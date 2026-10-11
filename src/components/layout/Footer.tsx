@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/shared/icons";
+import { GithubIcon, LinkedinIcon, FacebookIcon } from "@/components/shared/icons";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -103,11 +103,19 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/8801615992906" target="_blank" rel="noreferrer" className="text-black/70 hover:text-black font-semibold transition-colors flex items-center gap-3 group">
+                <a href="https://wa.me/8801615992906" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-black font-semibold transition-colors flex items-center gap-3 group">
                   <span className="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-white transition-colors">
                     <WhatsAppIcon className="w-4 h-4" />
                   </span>
                   WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/imhussainrakib" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-black font-semibold transition-colors flex items-center gap-3 group">
+                  <span className="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center group-hover:bg-[#1877F2] group-hover:text-white transition-colors">
+                    <FacebookIcon className="w-4 h-4" />
+                  </span>
+                  Facebook
                 </a>
               </li>
             </ul>
