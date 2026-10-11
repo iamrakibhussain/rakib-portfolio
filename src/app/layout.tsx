@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import Aurora from "@/components/ui/Aurora";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,7 +35,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col relative">
+      <body className="min-h-full flex flex-col relative overflow-x-hidden">
         <Aurora
           colorStops={["#7cff67", "#B497CF", "#5227FF"]}
           blend={0.5}
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 w-full relative z-10">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

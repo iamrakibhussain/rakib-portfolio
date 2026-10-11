@@ -100,13 +100,45 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
 
         {/* Actions */}
         <div className="flex items-center gap-4 mt-auto pt-4 border-t border-black/10">
-          <Link href={project.liveUrl || "#"} className="flex items-center justify-center flex-1 h-12 rounded-xl bg-black text-white font-bold text-sm shadow-xl hover:scale-105 hover:bg-black/90 transition-all duration-300 group/btn">
-            <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-            Live Demo
-          </Link>
-          <Link href={project.repoUrl || "#"} className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/50 border border-white/60 text-black shadow-lg hover:scale-105 hover:bg-white/70 transition-all duration-300">
-            <GithubIcon className="w-5 h-5" />
-          </Link>
+          {project.liveUrl && project.liveUrl !== "#" ? (
+            <a 
+              href={project.liveUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center justify-center flex-1 h-12 rounded-xl bg-black text-white font-bold text-sm shadow-xl hover:scale-105 hover:bg-black/90 transition-all duration-300 group/btn"
+            >
+              <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+              Live Demo
+            </a>
+          ) : (
+            <Link 
+              href={`/projects/${project.slug}`} 
+              className="flex items-center justify-center flex-1 h-12 rounded-xl bg-black text-white font-bold text-sm shadow-xl hover:scale-105 hover:bg-black/90 transition-all duration-300 group/btn"
+            >
+              <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+              Case Study
+            </Link>
+          )}
+
+          {project.repoUrl && project.repoUrl !== "#" ? (
+            <a 
+              href={project.repoUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label={`View ${project.title} on GitHub`}
+              className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/50 border border-white/60 text-black shadow-lg hover:scale-105 hover:bg-white/70 transition-all duration-300"
+            >
+              <GithubIcon className="w-5 h-5" />
+            </a>
+          ) : (
+            <Link 
+              href={`/projects/${project.slug}`}
+              aria-label={`View ${project.title} case study`}
+              className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/50 border border-white/60 text-black shadow-lg hover:scale-105 hover:bg-white/70 transition-all duration-300"
+            >
+              <GithubIcon className="w-5 h-5" />
+            </Link>
+          )}
         </div>
       </div>
     </div>

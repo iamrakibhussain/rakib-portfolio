@@ -163,7 +163,13 @@ export function ExperienceClient({ experiences }: { experiences: Experience[] })
             Get In Touch
             <Send className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </Link>
-          <a href="/resume.pdf" target="_blank" className="group px-8 py-4 bg-white text-black border border-black/10 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-black/5 transition-colors">
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            download="Rakib_Hussain_Resume.pdf"
+            className="group px-8 py-4 bg-white text-black border border-black/10 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-black/5 transition-colors"
+          >
             Download Resume
             <FileText className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
           </a>
