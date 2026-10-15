@@ -2,6 +2,35 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "job-circular-publishing-platform",
+    title: "JobCircular — Enterprise Career & Circular Publishing Platform",
+    role: "Full Stack Developer",
+    summary:
+      "An enterprise-grade Bangladesh job circular and career publishing ecosystem with real-time application tracking, multi-criteria taxonomy filtering, and an ultra-secure 2-step OTP email verification flow.",
+    content:
+      "JobCircular is a production-ready recruitment and job circular publishing platform built for job seekers, publishers, and administrators in Bangladesh. It features categorized job postings, deadline countdowns, multi-criteria filtering, application tracking, bookmarks, and personalized dashboards. The platform includes secure 2-step OTP email verification with hashed codes, timing-safe verification, brute-force lockout protection, anti-replay safeguards, JWT token rotation, refresh-token family revocation, password reset protection, and role-based access control for users, editors, and administrators. Built with Next.js, React, Node.js, PostgreSQL, Prisma, and Tailwind CSS, it uses Nodemailer with Resend fallback for reliable email delivery.",
+    coverImage: "/images/projects/CareerPulse Futuristic Career Dashboard.png",
+    technologies: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Tailwind CSS v4",
+      "Nodemailer (Gmail SMTP)",
+      "Resend API",
+      "JWT (Token Rotation)",
+      "Bcrypt.js",
+      "Zod Validation",
+      "Helmet & Rate Limiting",
+    ],
+    results: "Enterprise Security & Zero-Spam Job Discovery",
+    publishedAt: "2026-10-15",
+    featured: true,
+  },
+  {
     slug: "focusly",
     title: "Focusly — Student Productivity Platform",
     role: "Full-Stack Web Application",
@@ -35,7 +64,7 @@ export const projects: Project[] = [
     summary:
       "A complete modern e-commerce solution with seamless payment gateway integration and optimized cart experience.",
     content: "Detailed description of the E-Commerce Platform goes here...",
-    coverImage: "/images/projects/focusly study productivity dashboard.png",
+    coverImage: "placeholder.svg",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     liveUrl: "#",
     repoUrl: "#",
