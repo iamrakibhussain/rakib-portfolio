@@ -2,6 +2,40 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "flowpilot",
+    title: "FlowPilot — Multi-Tenant Business Operations & Client Management SaaS",
+    role: "Full-Stack Software Engineer & Architect",
+    summary:
+      "An enterprise-grade, multi-tenant Business Operations SaaS engineered for digital agencies and service consultancies to unify client CRM, automated scheduling, sequential billing, and project delivery into a single cohesive workspace.",
+    content:
+      "FlowPilot was architected and engineered from the ground up to eliminate tool fragmentation for service-oriented businesses. Instead of juggling separate software for bookings, client communications, estimates, and project management, FlowPilot delivers a unified, multi-tenant platform with strict data isolation.\n\nKey architectural and product highlights include:\n- Multi-Tenant Core: Strict workspace boundary enforcement across all database queries using tenant-scoped organization IDs, RBAC permissions (Owner, Admin, Member, Billing), and secure Argon2id session authentication via HttpOnly signed cookies.\n- Concurrency-Hardened Scheduling: An appointment scheduling engine supporting specialist shift windows, buffer intervals, blocked time, and database-level transaction locks that systematically prevent double-booking.\n- Financial Operations & Billing: Collision-free sequential invoice generation (INV-YYYY-XXX), itemized estimates, retainer hour logs, and Stripe Checkout test integrations with verified webhook reconciliation.\n- Delivery & Collaboration Hubs: Interactive Kanban project tracking, client milestone checklists, and SHA-256 audit-trailed digital contract signing.\n- Client Self-Service Portal: Token-authorized external portal enabling clients to review proposals, confirm appointments, and settle outstanding balances without creating full SaaS accounts.\n- Operations Telemetry Dashboard: Real-time cash flow aging analytics, interactive revenue trajectory charts, and instant activity filtering querying live PostgreSQL records.\n\nThe frontend is built on Next.js 16 App Router and React 19 with Tailwind CSS v4 and TanStack Query, verified across an 8-viewport responsive matrix (320px–1920px) with comprehensive Vitest unit suites and Playwright smoke testing.",
+    coverImage: "/images/projects/FlowPilot-Dashboard.png",
+    technologies: [
+      "Next.js",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma ORM",
+      "TanStack Query",
+      "Stripe API",
+      "Radix UI",
+      "Argon2",
+      "Supabase Storage",
+      "Vitest",
+      "Playwright",
+      "Zod",
+    ],
+    liveUrl: "https://flowpilot-saas-app.vercel.app/",
+    repoUrl: "https://github.com/iamrakibhussain/flowpilot",
+    results:
+      "Production-Ready Enterprise SaaS Platform",
+    publishedAt: "2026-11-10",
+    featured: true,
+  },
+  {
     slug: "job-circular-publishing-platform",
     title: "JobCircular — Enterprise Career & Circular Publishing Platform",
     role: "Full Stack Developer",
@@ -64,13 +98,13 @@ export const projects: Project[] = [
     summary:
       "A complete modern e-commerce solution with seamless payment gateway integration and optimized cart experience.",
     content: "Detailed description of the E-Commerce Platform goes here...",
-    coverImage: "placeholder.svg",
+    coverImage: "/images/projects/placeholder.svg",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     liveUrl: "#",
     repoUrl: "#",
     results: "1000+ Active Users",
     publishedAt: "2023-11-15",
-    featured: true,
+    featured: false,
   },
   {
     slug: "project-3",
@@ -84,7 +118,7 @@ export const projects: Project[] = [
     liveUrl: "#",
     repoUrl: "#",
     publishedAt: "2024-01-20",
-    featured: true,
+    featured: false,
   },
   {
     slug: "project-4",
@@ -100,6 +134,6 @@ export const projects: Project[] = [
     repoUrl: "#",
     results: "0ms Latency",
     publishedAt: "2024-03-05",
-    featured: true,
+    featured: false,
   },
 ];

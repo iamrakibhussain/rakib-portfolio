@@ -1,69 +1,177 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-  /Type /Catalog
-  /Pages 2 0 R
+/F1 2 0 R /F2 3 0 R /F3 11 0 R
 >>
 endobj
 2 0 obj
 <<
-  /Type /Pages
-  /Kids [3 0 R]
-  /Count 1
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
 >>
 endobj
 3 0 obj
 <<
-  /Type /Page
-  /Parent 2 0 R
-  /MediaBox [0 0 612 792]
-  /Contents 4 0 R
-  /Resources <<
-    /Font <<
-      /F1 5 0 R
-    >>
-  >>
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
 >>
 endobj
 4 0 obj
 <<
-  /Length 187
+/A <<
+/S /URI /Type /Action /URI (mailto:alrokib44@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 306.3048 758.4126 392.9568 769.2126 ] /Subtype /Link /Type /Annot
 >>
-stream
-BT
-/F1 22 Tf
-50 720 Td
-(Rakib Hussain - Full-Stack Developer) Tj
-/F1 12 Tf
-0 -36 Td
-(Email: rakibhussain.dev@gmail.com) Tj
-0 -20 Td
-(Portfolio: iamrakibhussain.vercel.app) Tj
-0 -20 Td
-(GitHub: github.com/iamrakibhussain) Tj
-ET
-endstream
 endobj
 5 0 obj
 <<
-  /Type /Font
-  /Subtype /Type1
-  /BaseFont /Helvetica
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/rakibhussain313/)
+>> /Border [ 0 0 0 ] /Rect [ 400.3008 758.4126 434.3208 769.2126 ] /Subtype /Link /Type /Annot
 >>
 endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/iamrakibhussain)
+>> /Border [ 0 0 0 ] /Rect [ 441.6648 758.4126 469.6728 769.2126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://rakib-hussain-portfolio.vercel.app)
+>> /Border [ 0 0 0 ] /Rect [ 477.0168 758.4126 510.0288 769.2126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://mastrus.com)
+>> /Border [ 0 0 0 ] /Rect [ 180.725 534.0126 230.735 546.0126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/iamrakibhussain/flowpilot)
+>> /Border [ 0 0 0 ] /Rect [ 472.9514 421.4526 508.169 432.0126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/iamrakibhussain/flowpilot-backend)
+>> /Border [ 0 0 0 ] /Rect [ 515.3498 421.4526 549.5906 432.0126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://rakib-hussain-portfolio.vercel.app/projects/job-circular-publishing-platform)
+>> /Border [ 0 0 0 ] /Rect [ 504.1034 276.2126 549.5906 287.1126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://focusly-client.vercel.app/)
+>> /Border [ 0 0 0 ] /Rect [ 472.969 187.1526 515.0242 197.7126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/iamrakibhussain/Focusly-Client)
+>> /Border [ 0 0 0 ] /Rect [ 522.205 187.1526 549.5906 197.7126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://rakib-hussain-portfolio.vercel.app)
+>> /Border [ 0 0 0 ] /Rect [ 481.2762 111.6526 515.0242 122.2126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/iamrakibhussain/rakib-portfolio)
+>> /Border [ 0 0 0 ] /Rect [ 522.205 111.6526 549.5906 122.2126 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 12 0 R 13 0 R 14 0 R 
+  15 0 R 16 0 R ] /Contents 21 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+18 0 obj
+<<
+/PageMode /UseNone /Pages 20 0 R /Type /Catalog
+>>
+endobj
+19 0 obj
+<<
+/Author (Rakib Hussain) /CreationDate (D:20261111044148+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261111044148+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (Full-Stack Developer | JavaScript & TypeScript) /Title (Rakib Hussain \204 Full-Stack Developer CV) /Trapped /False
+>>
+endobj
+20 0 obj
+<<
+/Count 1 /Kids [ 17 0 R ] /Type /Pages
+>>
+endobj
+21 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 4109
+>>
+stream
+Gb!#^?$G$]&q/*0^f-9"/$n4oftOOtbI+X!XB95LgZ'*+KI+P^Tn9'[p[lMp$p[^Tou4jEf?J"R;':B,%.;n4J4]V,a&IOY.3\.-jG.f?Qkl+F&^rHS1:\Z_adYNOQrQf"28$`l42_Xl__NeShLhF0ZgS*L7Gs<mHS.$hcgglROg@!nVqDJgP=Z*K=N#6!#g:6h9J84RY91RKPF*?Gd!Ir&(M01:T"QA4cXcSWEkL67k4AuZCn$c0[H=kW\7thpDhh=WVQs%OCuU*VgU0AgKRZ@mmg$dM^^N.)435fpR3]i5Jk#LqN%J0V(/0n+a9T;Pj%/`06/IdHj+?MKX,4"h\7af7?o@KA%:$Z#a)?EUP7_buiL)BsB`u.C;IV`WY&Dl%&i,2B[d-1/\()r6%*s*hZjL(`oNQ`(Q>M;+^Y[,<9uFEa<\)KNCr^G&g0>%J1gCQg?S."401Mnk_R/htpt#m9Lm6Uk>`1+0-;-P!Io=rEj2Y]UMB7%=ZWTV)QHruBrYYhm&=>u)cjITDIhB(6]-ER\d6n=t4idBM/>YH`,*>ppm%-e8IP5ticf/C,,+\\VMi2WP,$g1]/FGpC72)cg$aM-^?-Da3"tT?,Il0>jL0Fb5fuMEh68f%edHK`hHnZTPY<SU`P4:2,=!os,X_5=[R]uOVeLUdm!,Xpdh`KIZ9&)T5H/Ec'$\n)0r]NJ"_NpJ!Q=J`CGeGl=MKH'[<*!mjR!c^o:)!UScXqiCD8;iJgk)%;R?fslYurPc-8Y5.VM$Q;$'/c97@'tjdP<9HEPXE!'kC#&\G"t16Ai:3MOZfu@SUeXNM+UYlq:c7cJ\ltWBLa)/0rD[om%g.T$j4qGU2ih-JA1CV*RjL.9T[sO+`[u<XlB%btuK.QuHgJ4Je4YHQj\5G_JH(q.!a82#i]n%)rs$1)e$FZn1>n5\6?%+!1g2s&;d?,c1a9d[Un7"?qGC95n?FrE-;:J8s,XS&("CQgsTtb2O!Q?*KaHDDP\/0jDFmZq7O2+t%XrbmSJ8/.]9Y.s#8Jq!g.-5=T,(,d)n:#s6/K^au5dS-M8i"[)17S408bboG=%lDYrVlCsPBSg=!1aW4.oaU99VN:lh+;0"%Y1.U4&J7So^:T"NJk/,a_0&bc+j7uHVD72CmbkAbsp?nL\:+nd@:N:1MH['frmP%'g1sGF!ZQ3ZpNA,@YVTku,Et7?591Vc'XAf+n19K7*8+#,[HScRds1Ed3>MIW2SU0@+EcpX?aQ[qcGOQ(&io&q\IP)dC+ndjlXoLdU6]DZk8=L,0JeMbM,<%IA?cXn<So..QKX`Dm6Dcp:]83_7VIAF^alF\Taqq;<pl^cs!4gD)^?o<H5;:k5p0&"G?Yf.X%6GO&D?W:Y,hVr..\3Z9dTcC;Kh45l:JQ8hQMfG<UOeXrOpfplH?WF(BJ<kR&A\bDcpT&,80J]@10gLeK[7/YOC?:mnG;Oa_le&JYI0@]*@b\ZjLuql2cgq.>U>1eEF?*oBjM`KEs<0$._rc,M)#Oe'q::8=Fd34/b[g3fIcsiCqD#T>C]kK:,]3MPp<lW7P,del&Tua90SUT,C>[%`s9_!o0TY[UeX-eCg,+rh/)Y5@_\R166nQn"B,C8.+:n(!iFWqRVqi?Y@DS[mKX/h99D!RjJiI[Kuo,sb'paU*A$a9`ff]uJ6pseM`hRL1E,$W#9Q_H*G4U1NW+,q1TkT(qX:JW[96+cp6?*<L'lOYrK%@CD:a:m9LB+A1OsDHrjH*lBkM/S*D?gP3F2*Xn@53<+b?O"-V_eg#h8_T3(TJ?\o6b`g4<gg*mCMTgWj69DQF;EDVBj4#I[Wt/B2K,"Eb&(YkkSk[hem!P).!B3^ES-Aqlq$LIT&#C>0\p+isC0G[RtXh2\1W$[QUb^7$RrXIG;+c(48_Wa\<\NJ`RqV+T!6X,O'IXcb/q=:(#oqnb4LeiEfq.j@Xl$L@Eam@<)L3+nU2&sbk#*#(+Q&MkJj6<#FcJ/8t&go4R[Bo#qj5Vqo&-ioA"%PDcg[mf:`Q]![&BG#uaR`cF9cjkSj=tjL.j:>X[S1,Q@j^KBDd2'I]D/dcB-'udGSbrR0@V`]+"o^N=@q?.sLmG-EK-H)!KAjc`YFJ\,&q,tlH_q(iPg/HU_lp%iY`_8P:ai=R?lR*J.e%d$0**TV.[47jQP@!1[.9Of7:LFqik/>]:]2,u>HX66JR62K!1$h#FML18c5o#8c'g>7?2geQ![I))LP"PDT\]\*SB3)GLaoR@^NSNpr>2RVN!G]%e&gO,!6P*<T/mYs*'<qu`<4.9>Q'$ZX6WeWZr\ko3TN:7%jR[%!dTStY#MrMU<@uRbFE44/$=H,<AhU9$#l(fJV")IS8O#/FH""T6?j$n,Z8:$!le@`&X[fliIG(rf?c@E^bMlsT<,H"k\/eA4re7Cc&+%>@@22bi^N.n:\=GPqTKFJ3BLK(\$"N80eC#RG&=Ku@d(]J<s9CLH?F)D%+iZlH`OPk+o\hS;\p$\3<p(p&n<50S$Kt)e/mIe2Q./dX"39nOmG,u$!e$ZlEYQ_or#q6,"i2Z5Vnq;.YoU:irJ@)a^B<hP0brd2M!kE9gQa-)7QVsG<e4D1L%iuFel4`:>[/Y>6A_Ri)jsTXSA"6,@F#4,S_3^!IYU=VB36_.1k]iRTi[T-efq\r2%UF!U_/QZ=n:U:3$(V.POpXH&RIG3tB.93MTa%B2bXini>=M?tWU^-@#KN0bAUXEQURF?E"`,lfecOmCOtYA-];_JQ,JW$jQr4mnq'JPV>.\1Qbf[a;E1n#9dSbESr^U(gX?k7Fca2I5C;RJhua]-1uqh>Z[2>(\-3nLH;!b=`_l4"M+Ym:-T=/a#LBY"'ME0D5'N%0QCGkZk`hCnWN'%5(Y8@mPSRK&.'IUEhoF4"?S/chpe<)f#Ml>nbP(Q.BW\_gJJ@^C4e0A\UTL*9$8j0.4C=9>k98E'cu42Cib`'Z^G:[$r<GKVf>?N_f!<5maYiIf6(L5q"n^G@h%KJQ1pjCK,%Rnf\aG8J0:)k,#qB>HsF^b:-?[%XWf:AU81bdSJp1A+ZPZC*Rr#K"=mAqHS]@VJN&VtESQA#0!5V7rKfAmhegK0YGZosX3R86aT.u(AHJ!m=PsE=-#XrW,$ApiqG#f?g!gPVg<U,B.:MFo?$Te8iAK`*\dMe]44P:ON#u,cCotZb8nNA9"+m\?bVK(uN3$)&Rigd%)i#S4O3[gF4%,fYY*I/%8Z[[$#aMPABdI#H-OjcqG)E]>&GQ20SMj.;$sP":1+EqEOBq5`%7$$'fF4g$cnNl$(fjJ^WX,X2P#I&+6CmiE8B`KJ>gR%n<lEtuH.,`KHc52s`Lts3.V)cXc/CjZ>`K%rC<.64s&;f4GCl^+o84RFe3:^M&&1hRo(V4n_`hC/!l5"XZC""678QL+#\sL@)ST\k7fTGe9!0P:`n-Z@<mG$gHJu$F<_TMPFE6d,?o&4\j7VdK!j?bGrjU(#]E+0XC=l%<<+)n0%:A\cn`>j^-2P$p8($c+`UNhkkk?'l*sV.7M14gY>=AK;hAeLbWHdZcG)b^(Ap-/OR(h;Zk3$BE.^:*6HC?9DMga5uR%^67Q)O&p,t/u$-#ce)Lj[fhSQ<H_BR*qd!!A8E<Qm,M0b6gUTtI&o4\9>lg`0b$7iiMZL[>.nT..T:'/WhoA"#L]1'%MX:/ggrFj17aAWE4h_3dhLJJ\qr?m5K/+T^t03&Ri-ofDiWDtI>]%Un"F%1o]sq?J\jJo;-(qOV7;R/U'KeiHj^!S[+0-j!b2o%Fhrg5CA:NKuE'0*ZUjZa9]&JSDP1e_^hnUFPfCNn$(kkrocb/K:Q&qC`!(F`6.GfOFogmfM-W1HQ#tXgJ(jMI95>[LM5,l1@M1Vf@t";"@mNjtoXi*9;\NC6*ORR$OerI^Q'hFeI?q=i'7\$8ZdXW^*I1?B-t\Q:r+AUaTmImK>-rpYT9NJeu,34uiH$oOK_irn-0VU\A&tX+OAn^Ki<m:ULjC,U0'e@QtUlU'1!R`Y$gF5ePI+bs2=Z7F^9eY2?h6nn]&q\g@RD$2GMW:W=V7bWrcT0N3LcF,hZl^/0n%=qj@+o,:*Pm1D`6W&oT/=I#AJ=?ta@%n:_fNr~>endstream
+endobj
 xref
-0 6
+0 22
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000266 00000 n 
-0000000504 00000 n 
+0000000061 00000 n 
+0000000113 00000 n 
+0000000220 00000 n 
+0000000332 00000 n 
+0000000510 00000 n 
+0000000706 00000 n 
+0000000892 00000 n 
+0000001086 00000 n 
+0000001255 00000 n 
+0000001450 00000 n 
+0000001655 00000 n 
+0000001771 00000 n 
+0000002008 00000 n 
+0000002194 00000 n 
+0000002395 00000 n 
+0000002590 00000 n 
+0000002792 00000 n 
+0000003091 00000 n 
+0000003161 00000 n 
+0000003502 00000 n 
+0000003563 00000 n 
 trailer
 <<
-  /Size 6
-  /Root 1 0 R
+/ID 
+[<5737b3af9266653f4d1eeea7e5f9b8f9><5737b3af9266653f4d1eeea7e5f9b8f9>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 19 0 R
+/Root 18 0 R
+/Size 22
 >>
 startxref
-585
+7764
 %%EOF
